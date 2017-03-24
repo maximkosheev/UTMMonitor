@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<params>
+		<param id="0" name="PROCESS1" shortname="Transport" descr="Доступность службы Transport" />
+		<param id="1" name="PROCESS2" shortname="Transport-Updater" descr="Доступность службы Transport-Updater" />
+		<param id="2" name="PROCESS3" shortname="Transport-Monitoring" descr="Доступность службы Transport-Monitoring" />
+		<param id="3" name="LOCALWEBSERVER" shortname="Локальный web-сервис" descr="Доступность локального web-сервиса" />
+		<param id="4" name="INTERNET" shortname="Интернет" descr="Доступность интернета" />
+		<param id="5" name="DIRECTORY" shortname="Каталог" descr="Доступность файловой системы" />
+		<param id="6" name="JACART" shortname="JaCarta" descr="Доступность ключа JaCarta" />
+	</params>
+	<monitors sleepTime="1">
+		<monitor type="process" param="PROCESS1">Transport</monitor>
+		<monitor type="process" param="PROCESS2">Transport-Updater</monitor>
+		<monitor type="process" param="PROCESS3">Transport-Monitoring</monitor>
+		<monitor type="webserver" param="LOCALWEBSERVER">http://localhost:8080</monitor>
+		<monitor type="webserver" param="INTERNET">https://ya.ru</monitor>
+		<monitor type="filesystem" param="DIRECTORY">E:\TT</monitor>
+		<monitor type="device" param="JACART">
+			<vid>24dc</vid>
+			<pid>0101</pid>
+		</monitor>
+	</monitors>
+	<archive>
+		<directory>./archives</directory>
+		<period>30</period>
+	</archive>
+	<chart>
+		<timetick>1800</timetick>
+		<viewlasttime>43200</viewlasttime>
+		<autorefresh>true</autorefresh>
+		<refresh-period>10</refresh-period>
+	</chart>
+</settings>

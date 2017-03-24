@@ -1,0 +1,133 @@
+/* Полоса, на которой находятся пункты главного меню */
+.main-menu {
+	-fx-background-color: rgb(245, 242, 221);
+}
+
+.menu-bar {
+	-fx-background-color: transparent;
+	-fx-padding: 3px;
+}
+
+/* пункты гравного меню Файл, Справка и пр. */
+.menu {
+	-fx-background-color: transparent;
+}
+
+.menu-button > .arrow-button {
+	-fx-background-color: transparent;
+}
+
+.menu .label {
+	-fx-font-family: "MS Sans Serif";
+	-fx-font-size: 10pt;
+	-fx-text-fill: black;
+}
+
+.menu:hover, .menu:showing {
+	-fx-border-width: 1px;
+	-fx-border-radius: 5px;
+	-fx-border-color: rgb(158, 182, 233);
+	-fx-border-insets: -2px -2px -2px -2px;
+	-fx-background-radius: 5px;
+	-fx-background-color: rgb(222, 237, 255);
+	-fx-background-insets: -2px -2px -2px -2px;
+}
+
+.context-menu {
+	-fx-padding: 0px;
+	-fx-background-color: rgb(235, 230, 204);
+	-fx-border-width: 1px;
+	-fx-border-color: rgb(128, 128, 128);
+}
+
+.menu-item {
+	-fx-border-width: 1px;
+	-fx-border-color: transparent;
+	-fx-background-color: white;
+	-fx-background-insets: 0px 0px 0px 24px;
+}
+
+.menu-item > .label {
+	-fx-graphic-text-gap: 0;
+	-fx-padding: 0px 0px 0px 24px;
+}
+
+.menu-item:disabled {
+	-fx-opacity: 1.0;
+}
+
+.menu-item:hover {
+	-fx-border-width: 1px;
+	-fx-border-color: blue;
+	-fx-border-radius: 5px;
+	-fx-background-radius: 0px 5px 5px 0px;
+	-fx-background-color: rgb(224, 238, 255);
+	-fx-background-insets: 0px 0px 0px 0px;
+}
+
+/* область диаграммы */
+.chart {
+	-fx-padding: 0 0 0 0;
+}
+
+ 
+/* область графика (сам график, оси, подписи к осям) */
+.chart-content {
+	-fx-background-color: rgb(255, 251, 240);
+}
+
+/* непосредственно область построения графиков */
+.chart-plot-background {
+    -fx-background-color: rgb(255, 251, 240);
+}
+
+.chart-legend {
+	-fx-background-color: transparent;
+	-fx-padding: 20px;
+}
+
+.chart-legend-item-symbol{
+	-fx-background-radius: 0;
+}
+
+.chart-legend-item{
+	-fx-text-fill: #191970;
+}
+
+.default-color0.chart-line-symbol {
+    -fx-background-color: red, red;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 2.5;
+    -fx-padding: 5px 5px 5px 5px;
+    /*-fx-shape: "M5,0 L10,9 L5,18 L0,9 Z";*/ 
+}
+
+.default-color0.chart-series-line {
+	-fx-stroke: red;
+}
+
+/* область, контейнер для диаграммы */
+#tabs {
+	-fx-background-color: rgb(245, 242, 221);
+}
+
+.tab {
+	-fx-background-radius: 5 5 0 0;
+	-fx-border-radius: 5 5 0 0;
+	-fx-border-color: #ccc6ad;
+	-fx-border-width: 2px;
+	-fx-background-color: #efebe0;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-border-insets: 0 6px 0 0;
+	-fx-background-insets: 0 6px 0 0;
+}
+
+.tab:selected {
+	-fx-background-color: rgb(255, 251, 240);
+	-fx-border-color:  rgb(179, 172, 134) rgb(179, 172, 134) transparent rgb(179, 172, 134)
+}
+
+.tab-pane *.tab-header-background {
+	-fx-background-color: #fcf9ea;
+}
